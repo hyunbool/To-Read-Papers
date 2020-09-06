@@ -1,5 +1,5 @@
 # basic-is-the-best
-##기본 개념 다루기 위한 논문 정리
+## 기본 개념 다루기 위한 논문 정리
 ### 다양한 러닝 기법들
 #### Gradient Descent
 * [Zeiler, M. D. ADADELTA: An adaptive learning rate method(2012)](https://arxiv.org/abs/1212.5701)
