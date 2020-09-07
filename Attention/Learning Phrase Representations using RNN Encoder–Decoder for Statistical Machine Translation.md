@@ -61,26 +61,27 @@
 
 ### Hidden Unit that Adaptively Remembers and Forgets
 
-<p align="center"><img src = "./img/8.jpeg" height="40px" align="center"></p>
+<p align="center"><img src = "./img/8.jpeg" height="400px" align="center"></p>
 
 * 기존 LSTM의 unit들 보다 계산과 실행이 쉬운 새로운 hidden unit을 고안
 * 구조:
-    * Reset gate: <p align="center"><img src = "./img/9.jpeg" height="40px"></p>
+    * Reset gate: <p align="center"><img src = "./img/9.jpeg" height="50px"></p>
         * σ: logistic sigmoid function
         * x: input
         * <img src="https://latex.codecogs.com/gif.latex?h_{t-1}" title="h_{t-1}" />: 이전 은닉 상태
         * <img src="https://latex.codecogs.com/gif.latex?W_{r},&space;U_{r}" title="W_{r}, U_{r}" />: 가중치 행렬
-    * Update gate: ![pic10](./img/10.jpeg)
+    * Update gate:
+    <p align="center"><img src = "./img/7.jpeg" height="90px" align="center"></p>
     * <img src="https://latex.codecogs.com/gif.latex?h_{j}" title="h_{j}" />의 Actual activation: <p align="center"><img src = "./img/11.jpeg" height="40px"></p>
         <p align="center"><img src = "./img/12.jpeg" height="40px" align="center"></p>
         
-        * 작동 방식:
-            * reset gate 값이 0에 가까우면, 은닉 상태는 이전 은닉 상태는 지우고 현재 input으로 은닉 상캩를 초기화 한다.
-                * 이를 통해 별로 상관이 없는 정보는 은닉 상태에서 지우고, 더 compact한 표현을 만들어 낼 수 있다.
-            * update gate는 현재 은닉 상캐에 이전 은닉 상태의 정보를 얼마만큼이나 보존할지를 결정하게 된다. 
-            * 각 hidden unit은 별도의 reset과 update gate를 가지고 있으며, 각 시각마다 dependencies를 계산해나간다.
-                * short-term dependencies를 가질 수록 reset gate가 더 자주 활성화 될 것
-                * longer-term depencies를 가질 수록 update gate가 더 자주 활성화 될 것이다.
+     * 작동 방식:
+         * reset gate 값이 0에 가까우면, 은닉 상태는 이전 은닉 상태는 지우고 현재 input으로 은닉 상캩를 초기화 한다.
+             * 이를 통해 별로 상관이 없는 정보는 은닉 상태에서 지우고, 더 compact한 표현을 만들어 낼 수 있다.
+         * update gate는 현재 은닉 상캐에 이전 은닉 상태의 정보를 얼마만큼이나 보존할지를 결정하게 된다. 
+         * 각 hidden unit은 별도의 reset과 update gate를 가지고 있으며, 각 시각마다 dependencies를 계산해나간다.
+             * short-term dependencies를 가질 수록 reset gate가 더 자주 활성화 될 것
+             * longer-term depencies를 가질 수록 update gate가 더 자주 활성화 될 것이다.
                 
     
 
