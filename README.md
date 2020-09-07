@@ -10,3 +10,5 @@
 
 ### Align(Attention) 매커니즘
 * [Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio. Neural Machine Translation by Jointly Learning to Align and Translate(2015)](https://arxiv.org/abs/1409.0473#:~:text=Neural%20machine%20translation%20is%20a,to%20maximize%20the%20translation%20performance.)
+* [Minh-Thang Luong, Hieu Pham, Christopher D. Manning. Effective Approaches to Attention-based Neural Machine Translation(2015)](https://arxiv.org/abs/1508.04025)
+
