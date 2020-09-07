@@ -28,7 +28,9 @@
     * 이렇게 학습한 확률 분포를 이용해 각 시각 t에 가장 적합한 symbol을 찾아내는 예측해내는 것이 가능하다.
     
 ### RNN Encoder-Decoder
-![rnnencdec](./img/rnnencdec.jpeg)
+
+<p align="center"><img src = "./img/rnnencdec.jpeg" width="300px" align="center"></p>
+
 * 두개의 RNN을 사용해 하나는 가변 길이 source sequence를 고정 길이 벡터로 encode하고, 하나는 벡터를 다시 가변 길이의 타깃 시퀀스로 decode 하도록 학습시키는 신경망 네트워크 구조를 고안
 * 확률론적 관점에서 설명하자면, source sequence에 대해 target sequence의 조건부 확률을 학습하는 기법이다.
     * eg) <img src="https://latex.codecogs.com/gif.latex?p(y_{1},&space;...,&space;y_{T^{'}}|x_{1},&space;...,&space;x_{T})" title="p(y_{1}, ..., y_{T^{'}}|x_{1}, ..., x_{T})" />
@@ -40,13 +42,19 @@
     * Decoder: 은닉 상태 <img src="https://latex.codecogs.com/gif.latex?h_{<t>}" title="h_{<t>}" />에 대해 타깃 symbol <img src="https://latex.codecogs.com/gif.latex?y_{t}" title="y_{t}" />를 예측하는 것을 학습하면서 output sequence를 만들어내는 것을 train하는 RNN 모델로 이뤄져있다.
         * RNN의 은닉 상태와는 달리 RNN Encoder-Decoder 모델에서는 <img src="https://latex.codecogs.com/gif.latex?y_{t}" title="y_{t}" />과 <img src="https://latex.codecogs.com/gif.latex?h_{<t>}" title="h_{<t>}" /> 모두 <img src="https://latex.codecogs.com/gif.latex?y_{t-1}" title="y_{t-1}" /> 와 input sequence의 summary c에 의해 결정된다.
         * 따라서 디코더의 은닉 상태는 다음과 같이 달라진다.
-        ![decoder](./img/decoder_hidden.jpeg)
+        
+        <p align="center"><img src = "./img/decoder_hidden.jpeg" height="40px" align="center"></p>
+        
         * <img src="https://latex.codecogs.com/gif.latex?y_{t}" title="y_{t}" />를 예측하는 조건부 확률도 다음과 같이 표현할 수 있다.
-        ![target_prob](./img/cond_prob_target.jpeg)
+
+        <p align="center"><img src = "./img/cond_prob_target.jpeg" height="40px" align="center"></p>
+        
     * 이 두 요소가 다음 조건부 log-likelihood을 최대화하는 방향으로 jointly train 된다.
-    ![pic7](./img/7.jpeg)
         * θ: model parameter
         * <img src="https://latex.codecogs.com/gif.latex?(x_{n},&space;y_{n})" title="(x_{n}, y_{n})" />: (입력 시퀀스, 출력 시퀀스)
+   
+   <p align="center"><img src = "./img/7.jpeg" height="80px" align="center"></p>
+
 * 이 RNN Encoder-Decoder를 이용해 두 가지 종류의 task를 수행할 수 있다.
     1) input 시퀀스에 대해 target 시퀀스를 생성
     2) input-output 시퀀스 쌍에 대해 score를 계산
