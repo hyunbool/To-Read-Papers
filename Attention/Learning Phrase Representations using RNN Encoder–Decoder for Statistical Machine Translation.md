@@ -9,7 +9,9 @@
 
 ## RNN Encoder-Decoder
 ### Preliminary: Recurrent Neural Networks
-<img src = "./img/rnn.png" width="600px" align="center"/>
+
+<p align="center"><img src = "./img/rnn.png" width="600px" align="center"></p>
+
 * RNN(Recurrent neural network)
     * 가변 길이 시퀀스 <img src="https://latex.codecogs.com/gif.latex?x&space;=&space;(x_{1},&space;...,&space;x_{T})" title="x = (x_{1}, ..., x_{T})" /> 에 대해 은닉 상태 h를 계산해 output y를 만들어내는 신경망 네트워크
     * 은닉 상태 <img src="https://latex.codecogs.com/gif.latex?h_{<t>}" title="h_{<t>}" /> 는 다음과 같이 계산한다.
@@ -18,10 +20,11 @@
     * 시퀀스에서 다음 symbol을 예측하는 것을 훈련하면서, 그 시퀀스에 대한 확률 분포를 학습할 수 있다.
         * 시각 t일 때, output은 조건부 확률 <img src="https://latex.codecogs.com/gif.latex?p(x_{t}&space;|&space;x_{t-1},&space;...,&space;x_{1})" title="p(x_{t} | x_{t-1}, ..., x_{1})" />
         * eg) Multinomial distribution(1-of-K coding, 원핫 인코딩)일 때 output은 다음과 같이 표현할 수 있다.
-        * <img src = "(./img/rnn_cond_prob.jpeg" height="10px"/>
             * 모든 가능한 symbol인 j = 1, ..., K에 대해 <img src="https://latex.codecogs.com/gif.latex?w_{j}" title="w_{j}" />은 가중치 행렬 W의 j번째 열
+        <p align="center"><img src = "./img/rnn_cond_prob.jpeg" height="70px" align="center"></p>
+       
         * 이를 이용해 시퀀스 x에 대한 확률을 계산할 수 있다.
-        ![rnn_seq_prob](./img/rnn_seq_prob.jpeg)
+        <p align="center"><img src = "./img/rnn_seq_prob.jpeg" height="70px" align="center"></p>
     * 이렇게 학습한 확률 분포를 이용해 각 시각 t에 가장 적합한 symbol을 찾아내는 예측해내는 것이 가능하다.
     
 ### RNN Encoder-Decoder
