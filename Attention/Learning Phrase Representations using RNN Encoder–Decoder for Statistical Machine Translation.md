@@ -60,17 +60,20 @@
     2) input-output 시퀀스 쌍에 대해 score를 계산
 
 ### Hidden Unit that Adaptively Remembers and Forgets
-![pic8](./img/8.jpeg)
+
+<p align="center"><img src = "./img/8.jpeg" height="40px" align="center"></p>
+
 * 기존 LSTM의 unit들 보다 계산과 실행이 쉬운 새로운 hidden unit을 고안
 * 구조:
-    * Reset gate: ![pic9](./img/9.jpeg)
+    * Reset gate: <p align="center"><img src = "./img/9.jpeg" height="40px"></p>
         * σ: logistic sigmoid function
         * x: input
         * <img src="https://latex.codecogs.com/gif.latex?h_{t-1}" title="h_{t-1}" />: 이전 은닉 상태
         * <img src="https://latex.codecogs.com/gif.latex?W_{r},&space;U_{r}" title="W_{r}, U_{r}" />: 가중치 행렬
     * Update gate: ![pic10](./img/10.jpeg)
-    * <img src="https://latex.codecogs.com/gif.latex?h_{j}" title="h_{j}" />의 Actual activation: ![pic11](./img/11.jpeg)
-        * ![pic12](./img/12.jpeg)
+    * <img src="https://latex.codecogs.com/gif.latex?h_{j}" title="h_{j}" />의 Actual activation: <p align="center"><img src = "./img/11.jpeg" height="40px"></p>
+        <p align="center"><img src = "./img/12.jpeg" height="40px" align="center"></p>
+        
         * 작동 방식:
             * reset gate 값이 0에 가까우면, 은닉 상태는 이전 은닉 상태는 지우고 현재 input으로 은닉 상캩를 초기화 한다.
                 * 이를 통해 별로 상관이 없는 정보는 은닉 상태에서 지우고, 더 compact한 표현을 만들어 낼 수 있다.
