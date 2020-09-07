@@ -11,4 +11,16 @@
 ### Preliminary: Recurrent Neural Networks
 ![RNN](./img/rnn.png)
 * RNN(Recurrent neural network)
-      * ddd
+    * 가변 길이 시퀀스 <img src="https://latex.codecogs.com/gif.latex?x&space;=&space;(x_{1},&space;...,&space;x_{T})" title="x = (x_{1}, ..., x_{T})" /> 에 대해 은닉 상태 h를 계산해 output y를 만들어내는 신경망 네트워크
+    * 은닉 상태 <img src="https://latex.codecogs.com/gif.latex?h_{<t>}" title="h_{<t>}" /> 는 다음과 같이 계산한다.
+        * 시각 t일 때, <img src="https://latex.codecogs.com/gif.latex?h_{<t>}&space;=&space;f(h_{<t_1>},&space;x_{t})" title="h_{<t>} = f(h_{<t_1>}, x_{t})" />
+            * f: 비선형 활성화 함수
+    * 
+      
+ 
+      
+      
+      
+      
+      
+      
