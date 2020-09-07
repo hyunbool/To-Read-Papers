@@ -1,4 +1,5 @@
 # 기본 개념 다루기 위한 논문 정리
+논문 읽다가 헷갈리는 개념 정리하기
 ## 다양한 러닝 기법들
 ### Gradient Descent
 * [Zeiler, M. D. ADADELTA: An adaptive learning rate method(2012)](https://arxiv.org/abs/1212.5701)
