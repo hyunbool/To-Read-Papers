@@ -1,6 +1,6 @@
 # NEURAL MACHINE TRANSLATION BY JOINTLY LEARNING TO ALIGN AND TRANSLATE(2015)
 
-<p align="center"><img src = "./img/17.png" width="500px" align="center"></p>
+<p align="center"><img src = "./img/18.png" width="300px" align="center"></p>
 
 ## Introduction
 * 대부분의 NMT 모델 -> 인코더-디코더 모델!
@@ -38,4 +38,4 @@
 * 각 단어 x_j에 대한 annotation은 forward hidden state와 backward hidden state를 concat해서 얻게 된다.
 <p align="center"><img src = "./img/19.png" width="300px" align="center"></p>
 
-    * RNN이 최근에 들어온 단어에 대해 더 잘 표현해준다는 성질을 이용하면, annotation h_j는 단어 x_j 주변의 단어에 대해 focus할 수 있을 것.
+   * RNN이 최근에 들어온 단어에 대해 더 잘 표현해준다는 성질을 이용하면, annotation h_j는 단어 x_j 주변의 단어에 대해 focus할 수 있을 것.
