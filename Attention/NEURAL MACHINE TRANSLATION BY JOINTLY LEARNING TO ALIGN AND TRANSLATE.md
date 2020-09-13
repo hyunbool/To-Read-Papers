@@ -1,5 +1,3 @@
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-
 # NEURAL MACHINE TRANSLATION BY JOINTLY LEARNING TO ALIGN AND TRANSLATE(2015)
 ## Introduction
 * 대부분의 NMT 모델 -> 인코더-디코더 모델!
@@ -14,6 +12,7 @@
 
 ## Learning to Align and Translate
 ### Decoder: General Descripton
-
-(E = mc ^ 2), $$ x_ {1,2} =\frac {-b\pm\sqrt {b ^ 2-4ac}} {2b}. $$
-<p align="center"><img src = "./img/14.jpeg" width="300px" align="center"></p>
+* 기존의 조건부 확률 식을 다음과 같이 수정한다.
+<img src="https://latex.codecogs.com/gif.latex?p(y_{i}&space;|&space;y_{1},&space;...,&space;y_{i-1},&space;x)&space;=&space;g(y_{i-1},&space;s_{i},&space;c_{i})" title="p(y_{i} | y_{1}, ..., y_{i-1}, x) = g(y_{i-1}, s_{i}, c_{i})" />
+    * 이때 si는 시각 i일 때 RNN의 은닉 상태로 다음과 같은 식으로 계산한다.
+    <img src="https://latex.codecogs.com/gif.latex?s_{i}&space;=&space;f(s_{i-1},&space;y_{i-1},&space;c_{i})" title="s_{i} = f(s_{i-1}, y_{i-1}, c_{i})" />
