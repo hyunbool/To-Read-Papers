@@ -90,7 +90,6 @@
     1) 이전의 align 정보들을 fully 활용할 수 있음(과거의 hidden state에 과거의 문맥벡터가 포함되어 있기 때문)
     2) 네트워크를 좀 더 넓게 구현 가능
     
-    
-## Attention-based Models
-## 참고
+#### 참고
 https://tmaxai.github.io/post/luong-attention/
+
