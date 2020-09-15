@@ -29,10 +29,20 @@
             <p align="center"><img src = "./img/23.png" width="300px" align="center"></p>
 ### 3.1 Global Attention
 <p align="center"><img src = "./img/23.png" width="300px" align="center"></p>
+
 * 인코더의 모든 hidden state 고려해 context vector c_t를 만들어 낸다.
-* alignment vector a_t: 현재 target hidden state h_t와 각각의 source hidden state(annotation) <img src="https://latex.codecogs.com/gif.latex?\overline{h_{s}}" title="\overline{h_{s}}" />를 고려해 생성
+* alignment vector a_t: 현재 target hidden state h_t와 각각의 source hidden state(annotation) <img src="https://latex.codecogs.com/gif.latex?\bar{h_{s}}" title="\bar{h_{s}}" />를 고려해 생성
 <p align="center"><img src = "./img/25.png" width="300px" align="center"></p>
 
+* score function으로는 다음과 같은 방법을 사용:
+    * content-based function
+    <p align="center"><img src = "./img/26.png" width="300px" align="center"></p>
+    
+    * location-based function
+    <p align="center"><img src = "./img/27.png" width="300px" align="center"></p>
+    
+* alignment vector a_t를 weight으로 두고 모든 source hidden state에 대해 가중 평균을 구해 context vector c_t 만들어냄
+    
 ## Attention-based Models
 ## 참고
 https://tmaxai.github.io/post/luong-attention/
