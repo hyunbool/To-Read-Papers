@@ -28,7 +28,7 @@
             * 이 벡터를 softmax layer로 feed해 target 단어를 예측하게 된다.
             <p align="center"><img src = "./img/23.png" width="300px" align="center"></p>
 ### 3.1 Global Attention
-<p align="center"><img src = "./img/23.png" width="300px" align="center"></p>
+<p align="center"><img src = "./img/24.png" width="600px" align="center"></p>
 
 * 인코더의 모든 hidden state 고려해 context vector c_t를 만들어 낸다.
     * alignment vector a_t: 현재 target hidden state h_t와 각각의 source hidden state(annotation) <img src="https://latex.codecogs.com/gif.latex?\bar{h_{s}}" title="\bar{h_{s}}" />를 고려해 생성
@@ -60,7 +60,7 @@
     3) BA는 하나의 alignment function(concat)을 이용해 실험했다면, LA에서는 다양한 function들로 실험해 다른 function이 좋은 결과를 냈다는 것을 증명
     
 ### 3.2 Local Attention
-<p align="center"><img src = "./img/31.png" width="300px" align="center"></p>
+<p align="center"><img src = "./img/31.png" width="600px" align="center"></p>
 
 * global attention: 모든 단어를 고려하기 때문에 계산량 증가 & 긴 시퀀스를 번역하는데 문제 발생 ∴ **local attention: 각 target word에 대해 source 문장의 subset을 골라 그 단어들만을 고려**
 * Xu(2015)의 soft & hard attention:
@@ -82,7 +82,7 @@
          <p align="center"><img src = "./img/30.png" width="300px" align="center"></p>
          
 ### 3.3 Input-feeding Approach
-<p align="center"><img src = "./img/31.png" width="300px" align="center"></p>
+<p align="center"><img src = "./img/32.png" width="600px" align="center"></p>
 
 * 지금의 global & local attention → attentional decision이 독립적으로 만들어짐
     * 하지만 MT에서는 coverage set을 만들어 어떤 식으로 번역이 되고 있는지를 저장
