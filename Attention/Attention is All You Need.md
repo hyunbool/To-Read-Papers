@@ -23,10 +23,26 @@
 #### Decoder
 * 6개의 레이어로 구성, 각 레이어는 3개의 sub-layer로 구성
     * 인코더와 동일한 두개의 sub-layer + masked multi-head attention
-    <p align="center"><img src = "./img/40.gif" width="300px" align="center"></p>
+    <p align="center"><img src = "./img/40.gif" width="600px" align="center"></p>
+    <p align="center"> 그림 참조: http://jalammar.github.io/illustrated-transformer/</p>
     
-        * mask
+    * masking:
+         * 디코더 -> 그림과 같이 항상 현재 시각 이전에 generate 된 output만 참조하기 때문에 **현재 시각 이후의 key들에 대해 masking 해줌**         
 * 인코더와 마찬가지로 sub-layer들은 residual connection과 layer normalization으로 연결
+
+### 2. Attention
+<p align="center"><img src = "./img/41.gif" width="600px" align="center"></p>
+<p align="center">그림 참조: https://wikidocs.net/31379</p>\
+
+* Attention Function:
+    * 주어진 query에 대해 key와의 유사도 구해 유사도를 가중치로 해 key와 맵핑되어 있는 각 value에 반영
+    * 유사도가 반영된 value의 가중합 구해 리턴
     
-    
-    
+#### 2.1 Scaled Dot-Product Attention
+<p align="center"><img src = "./img/42.png" width="600px" align="center"></p>
+* input은 query, key, value로 이뤄져 있다!
+      * query와 key 사이의 dot product를 구함
+      * 각각을 <p align="center"><img src = "./img/41.gif" width="600px" align="center"></p>로 나눠줌
+      * value에 대한 weight를 얻기 위해 softmax function 적용
+* 모든 과정은 단어별로 따로 수행되는 것이 아니라 일괄적으로 연산 수행
+* 
