@@ -40,6 +40,7 @@
     
 #### 2.1 Scaled Dot-Product Attention
 <p align="center"><img src = "./img/42.png" width="600px" align="center"></p>
+
 * input은 query, key, value로 이뤄져 있다!
       * query와 key 사이의 dot product를 구함
       * 각각을 <p align="center"><img src = "./img/41.gif" width="600px" align="center"></p>로 나눠줌
