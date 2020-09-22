@@ -39,11 +39,11 @@
     * 유사도가 반영된 value의 가중합 구해 리턴
     
 #### 2.1 Scaled Dot-Product Attention
-<p align="center"><img src = "./img/42.png" width="600px" align="center"></p>
+<p align="center"><img src = "./img/42.png" width="300px" align="center"></p>
 
 * input은 query, key, value로 이뤄져 있다!
       * query와 key 사이의 dot product를 구함
-      * 각각을 <p align="center"><img src = "./img/41.gif" width="600px" align="center"></p>로 나눠줌
+      * 각각을 <img src="https://latex.codecogs.com/gif.latex?\sqrt{d_{k}}" title="\sqrt{d_{k}}" />로 나눠줌
       * value에 대한 weight를 얻기 위해 softmax function 적용
 * 모든 과정은 단어별로 따로 수행되는 것이 아니라 일괄적으로 연산 수행
 * 
