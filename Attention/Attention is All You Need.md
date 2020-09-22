@@ -42,8 +42,8 @@
 <p align="center"><img src = "./img/42.png" width="300px" align="center"></p>
 
 * input은 query, key, value로 이뤄져 있다!
-      * query와 key 사이의 dot product를 구함
-      * 각각을 <img src="https://latex.codecogs.com/gif.latex?\sqrt{d_{k}}" title="\sqrt{d_{k}}" />로 나눠줌
-      * value에 대한 weight를 얻기 위해 softmax function 적용
+    * query와 key 사이의 dot product를 구함
+    * 각각을 <img src="https://latex.codecogs.com/gif.latex?\sqrt{d_{k}}" title="\sqrt{d_{k}}" />로 나눠줌
+    * value에 대한 weight를 얻기 위해 softmax function 적용
 * 모든 과정은 단어별로 따로 수행되는 것이 아니라 일괄적으로 연산 수행
 * 
