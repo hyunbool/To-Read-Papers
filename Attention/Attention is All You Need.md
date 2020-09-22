@@ -31,8 +31,8 @@
 * 인코더와 마찬가지로 sub-layer들은 residual connection과 layer normalization으로 연결
 
 ### 2. Attention
-<p align="center"><img src = "./img/41.gif" width="600px" align="center"></p>
-<p align="center">그림 참조: https://wikidocs.net/31379</p>\
+<p align="center"><img src = "./img/41.png" width="600px" align="center"></p>
+<p align="center">그림 참조: https://wikidocs.net/31379</p>
 
 * Attention Function:
     * 주어진 query에 대해 key와의 유사도 구해 유사도를 가중치로 해 key와 맵핑되어 있는 각 value에 반영
