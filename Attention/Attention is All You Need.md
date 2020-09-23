@@ -9,7 +9,7 @@
     * 병렬 처리도 가능!
 
 ## Model Architecture
-<p align="center"><img src = "./img/39.png" width="300px" align="center"></p>
+<p align="center"><img src = "./img/39.png" width="500px" align="center"></p>
 * Transformer: 기존의 인코더-디코더 모델이서 착안한 구조 가짐 + RNN을 없애고 self-attention 레이어와 Feed Forward 네트워크로만 구성
 
 ### 1. Encoder and Decoder Stacks
@@ -47,7 +47,7 @@
          * d_k가 커질수록 dot product하는 규모는 커지기 때문에 softmax 함수의 gradient가 매우 작아지게 된다.
          * 이런 효과를 덜어주기 위해  <img src="https://latex.codecogs.com/gif.latex?\sqrt{d_{k}}" title="\sqrt{d_{k}}" />로 나눠 scaling을 해준다.
     * value에 대한 weight를 얻기 위해 softmax function 적용
-<p align="center"><img src = "./img/43.png" width="300px" align="center"></p>
+<p align="center"><img src = "./img/43.png" width="500px" align="center"></p>
 
 * 모든 과정은 단어별로 따로 수행되는 것이 아니라 일괄적으로 연산 수행
     * 각 query / key / value를 행렬로 묶어서 다음 식으로 계산
@@ -61,7 +61,7 @@
    * 각 stage마다 다른 representation를 만들어내기 때문에 각 subspace마다 다른 위치에 attend 된 표현을 얻을 수 있다.
        * '그 동물은 길을 건너지 않았다. 왜냐하면 그것은 너무 피곤하였기 때문이다.'(출처: https://wikidocs.net/31379):
            * 그것(it)이 쿼리였을 때, 즉, it에 대한 Q벡터로부터 다른 단어와의 연관도를 구하였을 때 첫번째 어텐션 헤드는 '그것(it)'과 '동물(animal)'의 연관도를 높게 본다면, 두번째 어텐션 헤드는 '그것(it)'과 '피곤하였기 때문이다(tired)'의 연관도를 높게 볼 수 있따. 이는 각 어텐션 헤드는 전부 다른 시각에서 보고있기 때문!       
-<p align="center"><img src = "./img/46.png" width="400px" align="center"></p>
+<p align="center"><img src = "./img/46.png" width="600px" align="center"></p>
 
 * 본 논문에서는 h = 8의 병렬 attention 레이어를 이용, d_k = d_v = d_model / h = 64를 사용했다.
 
