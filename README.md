@@ -21,6 +21,10 @@
 
 #### Self Attention
 * [Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin. Attention Is All You Need(2017)](https://arxiv.org/abs/1706.03762)
+    * 참고하면 좋은 사이트들
+        1. http://nlp.seas.harvard.edu/2018/04/03/attention.html
+        2. https://wikidocs.net/31379
+        3. http://jalammar.github.io/illustrated-transformer/
 
 ## Language Models
 * [Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding(2018)](https://arxiv.org/abs/1810.04805)
