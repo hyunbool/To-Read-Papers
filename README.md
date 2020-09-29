@@ -28,3 +28,6 @@
 
 ## Language Models
 * [Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding(2018)](https://arxiv.org/abs/1810.04805)
+    * 참고사이트
+        1. http://docs.likejazz.com/bert/
+        2. https://medium.com/dissecting-bert/dissecting-bert-part-1-d3c3d495cdb3
