@@ -4,6 +4,9 @@
 ### Gradient Descent
 * [Zeiler, M. D. ADADELTA: An adaptive learning rate method(2012)](https://arxiv.org/abs/1212.5701)
 
+### 성능 개선
+* [Jean et al. On Using Very Large Target Vocabulary for Neural Machine Translation(2014)](https://arxiv.org/pdf/1412.2007.pdf)
+
 ## Attention
 ### Seq2Seq
 * [Cho, K., van Merrienboer, B., Gulcehre, C., Bougares, F., Schwenk, H., and Bengio, Y. Learning phrase representations using RNN encoder-decoder for statistical machine translation(2014)](https://arxiv.org/abs/1406.1078)
