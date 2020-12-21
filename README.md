@@ -1,12 +1,14 @@
-# Papers that covers some basic concepts👩‍💻
-논문 읽다가 헷갈리는 개념 정리하기
+# To-Read-Papers👩‍💻
+읽어볼만한 & 읽어봐야할 & 읽어보고 싶은 논문 정리
+
 ## Learning Methods
 ### Gradient Descent
 * [Zeiler, M. D. ADADELTA: An adaptive learning rate method(2012)](https://arxiv.org/abs/1212.5701)
 
 ### 성능 개선
 * [Jean et al. On Using Very Large Target Vocabulary for Neural Machine Translation(2014)](https://arxiv.org/pdf/1412.2007.pdf)
-
+## Data Augmentation
+* [Data Augmentation using Pre-trained Transformer Models(2020)](https://arxiv.org/pdf/2003.02245.pdf)
 ## Attention
 ### Seq2Seq
 * [Cho, K., van Merrienboer, B., Gulcehre, C., Bougares, F., Schwenk, H., and Bengio, Y. Learning phrase representations using RNN encoder-decoder for statistical machine translation(2014)](https://arxiv.org/abs/1406.1078)
@@ -34,3 +36,4 @@
     * 참고사이트
         1. http://docs.likejazz.com/bert/
         2. https://medium.com/dissecting-bert/dissecting-bert-part-1-d3c3d495cdb3
+* [XLNet: Generalized Autoregressive Pretraining for Language Understanding(2019)](https://arxiv.org/pdf/1906.08237.pdf)
