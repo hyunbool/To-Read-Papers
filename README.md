@@ -45,3 +45,9 @@
 |Title|Summary|
 |---|---|
 |[Playing Atari with Deep Reinforcement Learning(2013)](https://arxiv.org/pdf/1312.5602.pdf)| |
+
+## Topic Modeling
+|Title|Summary|
+|---|---|
+|[Latent Dirichlet Allocation(2003)](https://jmlr.org/papers/volume3/blei03a/blei03a.pdf)|
+
