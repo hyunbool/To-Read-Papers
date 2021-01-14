@@ -49,5 +49,13 @@
 ## Topic Modeling
 |Title|Summary|
 |---|---|
-|[Latent Dirichlet Allocation(2003)](https://jmlr.org/papers/volume3/blei03a/blei03a.pdf)|
+|[Latent Dirichlet Allocation(2003)](https://jmlr.org/papers/volume3/blei03a/blei03a.pdf)| |
+|[Software Framework for Topic Modelling with Large Corpora(2010)](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.695.4595&rep=rep1&type=pdf)|Gensim 개발|
+|[Neural Variational Inference for Text Processing(2015)](https://arxiv.org/pdf/1511.06038v4.pdf)| |
+|[Mixing Dirichlet Topic Models and Word Embeddings to Make lda2vec(2016)](https://arxiv.org/pdf/1605.02019v1.pdf)| |
+|[AUTOENCODING VARIATIONAL INFERENCE FOR TOPIC MODELS(2017)](https://arxiv.org/pdf/1703.01488v1.pdf)| |
+|[Familia: A Configurable Topic Modeling Framework for Industrial Text Engineering(2018)](https://arxiv.org/pdf/1808.03733v2.pdf)|바이두에서 발표한 논문|
+|[Topic Modeling in Embedding Spaces(2019](https://arxiv.org/pdf/1907.04907v1.pdf)| |
+||tBERT: Topic Models and BERT Joining Forces for Semantic Similarity Detection(2020)](https://www.aclweb.org/anthology/2020.acl-main.630.pdf)| |
+
 
