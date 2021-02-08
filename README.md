@@ -41,10 +41,6 @@
 * [Language Models are Unsupervised Multitask Learners(2019)](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)
 * [XLNet: Generalized Autoregressive Pretraining for Language Understanding(2019)](https://arxiv.org/pdf/1906.08237.pdf)
 
-## Reinforcement Learning
-|Title|Summary|
-|---|---|
-|[Playing Atari with Deep Reinforcement Learning(2013)](https://arxiv.org/pdf/1312.5602.pdf)| |
 
 ## Topic Modeling
 |Title|Summary|
